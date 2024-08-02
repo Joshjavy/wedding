@@ -8,9 +8,9 @@
 @endsection
 @section('content')
 <nav class="flex py-3 ">
-    <ul class="w-1/2 px-16 ml-auto flex justify-end pt-1">
+    <ul class="w-full flex justify-end m-auto pt-1 w-full">
     @if(auth()->check())
-      <li class="text-sm py-2 px-4 rounded-md">
+      <li class="text-sm py-1 px-4 rounded-md">
         <p class=" text-sm">Welcome <b>{{ auth()->user()->name }}</b></p>
       </li>
       <li>
@@ -21,7 +21,7 @@
     </ul>
   </nav>
   
-    <div class="sm:w-full  md:w-full lg:w-3/6 xl:w-6/12			 lg:m-auto">
+    <div class="w-full m-auto sm:w-full md:w-full lg:w-full xl:w-1/3 2xl:w-1/3 ">
         <div class="">
             <table id="table_id" class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                 <thead>

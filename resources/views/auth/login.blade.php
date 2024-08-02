@@ -4,8 +4,7 @@
 
 @section('content')
 
-<div class="block mx-auto my-12 p-8 bg-white w-1/3 border border-gray-200 
-rounded-lg shadow-lg">
+<div class="block mx-auto my-12 p-8 bg-white  w-full sm:w-full md:w-full lg:w-1/3 xl:w-1/3 2xl:w-1/3 border border-gray-200 rounded-lg shadow-lg">
 
   <h1 class="text-3xl text-center font-bold">Login</h1>
 

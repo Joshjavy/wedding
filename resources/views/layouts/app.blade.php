@@ -62,7 +62,6 @@
         padding-top:10rem;
         padding-bottom:5rem;
         width: 100%;
-        max-height: 59rem;
         margin: auto!important;
       }
       .emblema{
@@ -78,7 +77,6 @@
       padding-top:10rem;
       padding-bottom:5rem;
       width: 80%;
-      max-height: 59rem;
       margin: auto!important;
     }
     .emblema{
@@ -93,7 +91,7 @@
       padding-top:5rem;
       padding-bottom:5rem;
       width: 100%;
-      max-height: 59rem;
+      
     }
     .emblema{
       width: 76%;
@@ -105,7 +103,7 @@
       padding-top:15rem;
       padding-bottom:5rem;
       width: 100%;
-      max-height: 59rem;
+      
     }
     .emblema{
       width: 76%;
@@ -113,14 +111,14 @@
     }
   }
 
-  /* Large devices (laptops/desktops, 992px and up) */
+  /* Large devices (laptops/desktops, 992px and up) max-height: 59rem; */
   @media only screen and (min-width: 992px) {
     
     .info{
       padding-top:5rem;
       padding-bottom:5rem;
       width: 60%;
-      max-height: 59rem;
+      
     }
     .emblema{
       width: 76%;
@@ -129,14 +127,14 @@
 
   } 
 
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  /* Extra large devices (large laptops and desktops, 1200px and up) max-height: 59rem; */
   @media only screen and (min-width: 1024px) {
     
     .info{
       padding-top:5rem;
       padding-bottom:5rem;
       width: 50%;
-      max-height: 59rem;
+      
     }
     .emblema{
       width: 76%;
@@ -156,12 +154,12 @@
 }
  
 .info::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
 }
  
 .info::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
+  
+  
 }
   </style>
   @yield('hscript')
@@ -177,9 +175,9 @@
     
     <script>
       $(document).ready(function() { 
-        let h = $(document).height();
+        let h = $(window).height();
         let hif=h-100;
-        let w =$(document).width();
+        let w =$(window).width();
         if(w<=1023){
           $('.imagebg').addClass("hidden" ) 
           $('.imagemb').removeClass("hidden" ) 
@@ -190,8 +188,8 @@
           $('.imagebg').removeClass("hidden" )
           $('.imagemb').addClass("hidden" ) 
           $('.info').css({'height':h+'px'})
-          $('.imagebg').css({'height':h+'px'})
-          
+          console.log(h)
+          // $('.imagebg').css({'height':h+'px'})
         }
         console.log(h)
         
@@ -203,8 +201,9 @@
           if (win.height() <=1023) {
             $('.imagebg').addClass("hidden" ) 
             $('.imagemb').removeClass("hidden" ) 
-            $('.imagemb').height=win.height() 
-            $('.info').height=win.height()
+            $('.imagemb').css({'height':h+'px'})
+            $('.imagemb').css({'width':w+'px'})
+            $('.info').css({'height':hif+'px'})
           }
 
           if (win.width() >= 1024) {

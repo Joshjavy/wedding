@@ -4,8 +4,8 @@
 
 @section('content')
     <div class="pagecontent">
-        <img src="{{ asset('imgs/elementos/Fondo_Anni_invite-monitor.png')}}" class="imagebg absolute sm:w-full  md:w-full lg:h-screen	xl:h-screen 2xl:h-screen" style="" />
-        <img src="{{ asset('imgs/elementos/Fondo_Anni_invite.png')}}" class="imagemb absolute  hidden" style="" />
+        <img src="{{ asset('imgs/elementos/Fondo_Anni_invite-monitor.png')}}" class="imagebg fixed sm:w-full  md:w-full lg:h-screen	xl:h-screen 2xl:h-screen" style="" />
+        <img src="{{ asset('imgs/elementos/Fondo_Anni_invite.png')}}" class="imagemb fixed  hidden" style="" />
         <div class="relative h-dvh">
 
             <div class="info">
@@ -33,7 +33,7 @@
 
                 </div>
 
-                <div class=" text-center py-10 ">
+                <div class=" text-center py-11 ">
                     <p class="titulo text-5xl">Dress Code </p>
                 </div>
 
@@ -49,7 +49,7 @@
                 </div>
 
 
-                <div class=" text-center py-10 ">
+                <div class=" text-center py-11 ">
                     <p class="titulo text-5xl">Gifts </p>
                 </div>
 
@@ -62,7 +62,7 @@
 
 
                 <div class="flex align-items-center justify-content-center py-4 w-1/2 m-auto ">
-                    <img src="{{ asset('imgs/elementos/Detalle-anni.png') }}" class="w-4/12	 m-auto" />
+                    <img src="{{ asset('imgs/elementos/Detalle-anni.png') }}" class="w-6/12	 m-auto" />
                 </div>
 
                 <div class=" text-center py-10 ">
@@ -138,7 +138,7 @@
                         Mexico. Please contact Anni and Marco.</p>
                 </div>
                 <div class="flex align-items-center justify-content-center py-4 w-1/2 m-auto ">
-                    <img src="{{ asset('imgs/elementos/Detalle-anni.png') }}" class="w-4/12	 m-auto" />
+                    <img src="{{ asset('imgs/elementos/Detalle-anni.png') }}" class="w-6/12	 m-auto" />
                 </div>
                 <div class=" text-center py-10 ">
                     <p class="titulo text-5xl">Confirmación de Asistencia </p>

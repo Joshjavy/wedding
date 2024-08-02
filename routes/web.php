@@ -14,7 +14,7 @@ Route::get('/', [RegistroController::class, 'index'])->name('index');
 Route::POST('/store', [RegistroController::class, 'store'])->name('confirmar.asistencia');
 
 
-Route::get('/login', [SessionsController::class, 'create'])->name('login.index');
+Route::get('/login', [SessionsController::class, 'create'])->name('login');
 Route::post('/login', [SessionsController::class, 'store'])
     ->name('login.store');
 Route::get('/logout', [SessionsController::class, 'destroy'])
